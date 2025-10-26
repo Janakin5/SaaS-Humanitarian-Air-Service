@@ -2,72 +2,43 @@
 
 ## Summary
 
-Describe briefly in 2-3 sentences what your project is about. About 250 characters is a nice length! 
+Das Humanitarian Air Service SaaS erkennt automatisch Krisen, optimiert Einsatzplanung und vereinfacht die Disposition von Luftrettungseinsätzen, Charterflügen und medizinischen Transporten
 
 
 ## Background
 
-Which problems does your idea solve? How common or frequent is this problem? What is your personal motivation? Why is this topic important or interesting?
+Es kommt immer wieder zu dramatischen Humanitairen Krisen. Oft ist dabei die Versorgung nur sehr erschwert möglich - der Luftweg ist dabei ein elementarer Bestandteil. 
+Viele NGOs & UNHAS verlieren viel Zeit bei der Bedarfsanalyse und Einsatzkoordination, die Flugkapazitäten sind knapp und teilweise schlecht koordiniert.
+Zudem treten viele Krisen in gering erschlossenen Gebieten auf, was die Einsatzmöglichkeiten sehr intransparant macht.
 
-This is how you make a list, if you need one:
-* problem 1
-* problem 2
-* etc.
+Die Lösung ist eine AI-gestützte Plattform, die automatisch:
+- Krisen erkennt (z.B. via Satelitenbilder, Newsfeeds, Geografischen Daten)
+- Flugplätze vorschlägt (Runway-Checks, Restriktionen - auch bspw. über Satelitenbilder)
+- verfügbare Ressourcen abschätzt und zuweist (Flugzeug, Crew, Ausstattung)
+- Einsatzpläne erstellt (+ an Crews weiterleitet)
 
 
 ## How is it used?
 
-Describe the process of using the solution. In what kind situations is the solution needed (environment, time, etc.)? Who are the users, what kinds of needs should be taken into account?
-
-Images will make your README look nice!
-Once you upload an image to your repository, you can link link to it like this (replace the URL with file path, if you've uploaded an image to Github.)
-![Cat](https://upload.wikimedia.org/wikipedia/commons/5/5e/Sleeping_cat_on_her_back.jpg)
-
-If you need to resize images, you have to use an HTML tag, like this:
-<img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Sleeping_cat_on_her_back.jpg" width="300">
-
-This is how you create code examples:
-```
-def main():
-   countries = ['Denmark', 'Finland', 'Iceland', 'Norway', 'Sweden']
-   pop = [5615000, 5439000, 324000, 5080000, 9609000]   # not actually needed in this exercise...
-   fishers = [1891, 2652, 3800, 11611, 1757]
-
-   totPop = sum(pop)
-   totFish = sum(fishers)
-
-   # write your solution here
-
-   for i in range(len(countries)):
-      print("%s %.2f%%" % (countries[i], 100.0))    # current just prints 100%
-
-main()
-```
+Eine Krise wird entweder Angegeben oder automatisch vom System erkannt. Die KI analysiert diese in Bezug auf Humanitaire Lufteinsätze genauer:
+- Schwere der Situation wird abgeschätz (anhand von früheren Krisen, ansässige Bevölkerung, Folgeereignisse, etc.)
+- aktuell verfügbare Flugkapazitäten werden untersucht und die am besten geeigneten Teile/ Crews ausgewählt (auch unter Einbezug der Wetterlage/Möglichkeiten vor Ort, Dienstplänen, etc.)
+- eine allgemeine Übersicht wird erstellt (benötigter Treibstoff, Güter die transportiert werden müssen, besonderer Bedarf, Plätze, die ausgeflogen werden müssen, Personal, das benötig wird)
+- nach Bestätigung durch einen Menschen können in einer Weiterentwicklung automatische Einsatzpläne erstellt werden
 
 
 ## Data sources and AI methods
-Where does your data come from? Do you collect it yourself or do you use data collected by someone else?
-If you need to use links, here's an example:
-[Twitter API](https://developer.twitter.com/en/docs)
-
-| Syntax      | Description |
-| ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        |
+Mögliche Datenquellen sind vor allem Satelitenbilder und -daten. Desweiteren müssten Wetter bzw. allgemein Geografische Daten bezogen werden.
 
 ## Challenges
 
-What does your project _not_ solve? Which limitations and ethical considerations should be taken into account when deploying a solution like this?
+Jede Krise ist sehr individuell, außerdem liegt die Umsetzung weiterhin bei den Menschen. Wenn das Programm jedoch falschliegt (bspw. Treibstoffbedarf) treten direkt sehr große Probleme auf, da es sich allgemein um ein sehr sensiblen Bereich handelt. Deswegen müsste rein rechtlich wahrscheinlich alles gegengeprüft werden.
 
 ## What next?
 
-How could your project grow and become something even more? What kind of skills, what kind of assistance would you  need to move on? 
+Ausgehend von der stark auf die Vorhersage aufgebaute Plattform, sind erweiterungen möglich, bspw. die Erstellung von Einsatzplänen, sodass mit nur einer Freigabe eines Menschen die Flugzeuge abheben können.
 
 
 ## Acknowledgments
 
-* list here the sources of inspiration 
-* do not use code, images, data etc. from others without permission
-* when you have permission to use other people's materials, always mention the original creator and the open source / Creative Commons licence they've used
-  <br>For example: [Sleeping Cat on Her Back by Umberto Salvagnin](https://commons.wikimedia.org/wiki/File:Sleeping_cat_on_her_back.jpg#filelinks) / [CC BY 2.0](https://creativecommons.org/licenses/by/2.0)
-* etc
+* UNHAS (United Nations Humanitarian Air Service)
