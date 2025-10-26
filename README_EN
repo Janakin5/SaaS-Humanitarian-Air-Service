@@ -1,0 +1,47 @@
+## SaaS Humanitarian Air Service
+
+## Summary
+
+The Humanitarian Air Service SaaS automatically detects crises, optimizes mission planning, and streamlines dispatching for air-rescue missions, charter flights, and medical transports.
+
+## Background
+
+Humanitarian crises occur repeatedly, and access to affected areas is often severely limited—airlift is a critical enabler. Many NGOs and UNHAS lose valuable time during needs assessment and coordination; flight capacity is scarce and sometimes poorly coordinated. Crises frequently occur in sparsely developed regions, making operational options opaque.
+
+The solution is an AI-powered platform that automatically:
+
+- Detects crises (e.g., via satellite imagery, news feeds, geographic data)
+
+- Suggests suitable airfields (runway checks, restrictions—including via satellite imagery)
+
+- Estimates and allocates available resources (aircraft, crew, equipment)
+
+- Generates mission plans (and distributes them to crews)
+
+## How is it used?
+
+A crisis is either entered manually or detected automatically by the system. The AI then analyzes it specifically for humanitarian air operations:
+
+- Assesses the severity of the situation (based on prior crises, local population, cascading events, etc.)
+
+- Checks currently available flight capacity and selects the best-suited assets/crews (including local weather/feasibility, duty schedules, etc.)
+
+- Produces a high-level overview (required fuel, goods to be transported, special needs, locations to evacuate, personnel required)
+
+- After human confirmation, future versions can automatically generate executable mission plans
+
+## Data sources and AI methods
+
+Primary data sources include satellite imagery and satellite-derived data. Weather and, more generally, geospatial data must also be integrated.
+
+## Challenges
+
+Every crisis is highly individual, and execution ultimately rests with humans. If the software is wrong (e.g., fuel estimates), problems can escalate quickly because the domain is highly sensitive. For legal and safety reasons, outputs will likely require human verification.
+
+## What’s next?
+
+Building on the prediction-focused platform, extensions are possible—e.g., automatic creation of flight tasking and dispatch plans so that, with a single human approval, aircraft can launch.
+
+## Acknowledgments
+
+UNHAS (United Nations Humanitarian Air Service)
